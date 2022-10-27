@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #141e30, #243b55);
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    height: 100px;
+    width: 100%;
+    color : #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    font-size: 45px;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.todoDiv{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TodoLabels{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkBox {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.inputBox{
+    width: 80%;
+    height: 35px;
+    margin: 10px 10px;
+    padding: 5px 11px;
+    border-radius: 20px;
+    outline: none;
+}
+
+._buttons{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addButton{
+    width: 40%;
+    height: 40px;
+    border-radius: 0 20px 20px 0 ;
+    background-color: #00b02f;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .1s ease-out;
+}
+.addButton:hover:active {
+    background-color: #0b932f;
+}
+
+.clearButton{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px 0 0 20px ;
+    background-color: #b02c00;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .1s ease-out;
+}
+.clearButton:hover:active {
+    background-color: #8a2c0d;
+}
+
+.text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 480px) {
+    .clearButton{
+        width: 50%;
+        height: 40px;
+        border-radius: 10px 0 0 10px;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+    .addButton{
+        width: 50%;
+        height: 40px;
+        border-radius: 0 10px 10px 0 ;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .clearButton{
+        width: 50%;
+        height: 40px;
+        border-radius: 5px 0 0 5px;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .addButton{
+        width: 50%;
+        height: 40px;
+        border-radius: 0 5px 5px 0 ;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+}
